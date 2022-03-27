@@ -4,7 +4,7 @@ var pincel = pantalla.getContext('2d');
 // Dibujar tablero:
 function crearTablero() {
     pincel.fillStyle = '#F3F5FC';
-    pincel.fillRect(0,0,300,450);
+    pincel.fillRect(0,0,600,450);
     pincel.lineWidth = 3;  
     pincel.strokeStyle = "#0A3871";
     dibujarBase();
@@ -75,7 +75,7 @@ function dibujarBrazoD() {
 // Dibujar guiones:
 function dibujarGuiones() {
     var inicioY = 380;
-    var centroX = 230;
+    var centroX = 245;
     var espesor = 4;
     var anchoGuion = 50;
     var separacionGuion = 10;

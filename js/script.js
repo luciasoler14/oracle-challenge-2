@@ -153,7 +153,7 @@ function dibujarLetraAcertada() {
     for(var i=0; i<palabraSecreta.length; i++) {
         if (letraIngresada == palabraSecreta[i]) {
             var inicioY = 360;
-            var centroX = 295 - (60 * (palabraSecreta.length / 2));
+            var centroX = 315 - (60 * (palabraSecreta.length / 2));
             palabraSecreta[i].replace(i, letraIngresada);
             pincel.fillStyle = "#0A3871";
             pincel.font = "46px Inter";
