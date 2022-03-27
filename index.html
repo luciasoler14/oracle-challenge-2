@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Juego del Ahorcado</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="logo">
+                <img src="img/a.png" alt="a alura" id="a-alura">
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio" style="text-align:center;">
+            <div>
+                <h1 class="titulo">Juego del Ahorcado</h1>
+            </div>
+            <div class="botones">
+                <button type="button" class="btn" id="iniciar-juego">Iniciar Juego</button>
+                <button type="button" class="btn" id="agregar-palabra">Agregar nueva palabra</button>
+            </div>
+        </section>
+        
+        <section class="palabraNueva" style="text-align:center">
+            <div>
+                <p>Ingrese una palabra</p>
+                <input class="text-input" type="text" id="input" placeholder="Escribe una nueva palabra">
+                <p class="min"><img src="img/high_importance.png" alt="important"> Máximo 8 caracteres</p>
+            </div>
+            <div class="botones">
+                <button class="btn" id="guardar-empezar">Guardar y empezar</button>
+                <button class="btn" id="cancelar">Cancelar</button>
+            </div>
+        </section>
+
+        <section class="juego" style="text-align:center">
+            <div><p id="pintar"></p></div>
+            <div class="juego-ahorcado">
+                <canvas id="ahorcado" height="450" width="600"></canvas>
+                <p id="palabra"></p>
+            </div>
+            <div class="palabra-secreta"></div>
+            <div  class="botones">
+                <p class="min"><img src="img/high_importance.png" alt="important"> Dispones de 8 intentos</p>
+                <button class="btn" id="nuevo-juego" type="usbmit">Nuevo Juego</button>
+                <button class="btn" id="desistir">Desistir</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <ul class="footer-redes">
+            <li>
+                <a href="#" class="red-link"><img class="red-icon" src="img/icon-instagram.png" alt="instagram page"></a>
+            </li>
+            <li>
+                <a href="#" class="red-link"><img class="red-icon" src="img/icon-facebook.png" alt="facebook page"></a>
+            </li>
+            <li>
+                <a href="#" class="red-link"><img class="red-icon" src="img/icon-youtube.png" alt="youtube page"></a>
+            </li>
+            <li>
+                <a href="#" class="red-link"><img class="red-icon" src="img/icon-linkedin.png" alt="linkedin page"></a>
+            </li>   
+        </ul>
+        <p class="footer-copy">Copyright © 2022 - Developed & design by <strong><a href="#">Lulú</a></strong></p>
+    </footer>
+
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+
+</body>
+</html>
