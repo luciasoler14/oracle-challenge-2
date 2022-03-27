@@ -3,7 +3,7 @@ var pincel = pantalla.getContext('2d');
 
 // Dibujar tablero:
 function crearTablero() {
-    pincel.fillStyle = 'red';
+    pincel.fillStyle = '#F3F5FC';
     pincel.fillRect(0,0,600,450);
     pincel.lineWidth = 3;  
     pincel.strokeStyle = "#0A3871";
